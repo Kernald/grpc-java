@@ -40,6 +40,9 @@ java_library(
         "@com_google_protobuf//:protobuf_java_util",
         "@io_grpc_grpc_proto//:channelz_java_proto",
     ],
+    exports = [
+        ":_channelz_java_grpc",
+    ],
 )
 
 java_library(
@@ -61,6 +64,9 @@ java_library(
         "@com_google_protobuf//:protobuf_java_util",
         "@io_grpc_grpc_proto//:reflection_java_proto_deprecated",
     ],
+    exports = [
+        ":_reflection_java_grpc",
+    ],
 )
 
 java_library(
@@ -77,6 +83,9 @@ java_library(
         "@com_google_code_findbugs_jsr305//jar",
         "@com_google_guava_guava//jar",
         "@io_grpc_grpc_proto//:health_java_proto",
+    ],
+    exports = [
+        ":_health_java_grpc",
     ],
 )
 
